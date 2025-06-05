@@ -1,0 +1,247 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* обязательно — чтобы перекрывала контент под ней */
+    z-index: 1000;
+    /* чтобы была поверх других блоков */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    /* добавь отступы, если уберётся margin */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* легкая тень, чтобы отделить */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .btn {
+    margin-right: 30px;
+}
+
+.middle-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 40px;
+    color: black;
+    font-weight: 900;
+    padding: 0 0 0 30px;
+}
+
+.middle-nav__list-links {
+    color: black;
+    transition: 300ms;
+    font-size: 20px;
+}
+
+.middle-nav__list-links:hover {
+    color: #FF7700;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 300ms;
+}
+
+.btn:hover {
+    color: #e7d4be;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 88px;
+    background-image: url(../images/menu-bg.png);
+    height: 500px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.cake{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.cake-box{
+    max-width: 425px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 30px 30px 30px;
+    border: 1px #D9D9D9 solid;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.cake-box__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cake-box img{
+    width: 300px;
+    height: 300px;
+    margin-left: 35px;
+}
+
+.cake-box h3{
+    letter-spacing: 1.2px;
+}
+
+.cake-box p{
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.cake-box__price span{
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.cake-box__price a{
+    padding: 13px 28px;
+    background: #FFA04C;
+    border-radius: 25px;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    transition: 300ms;
+}
+
+.cake-box__price a:hover{
+    color: white;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: #E7D4BE;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px;
+}
+
+.footer-content__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content__list-title {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+
+.footer-content__list-links {
+    color: black;
+    font-size: 17px;
+    transition: 300ms;
+}
+
+.footer-content__list-links:hover {
+    color: #FFA04C;
+}
+
+.footer-content__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content__right h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.footer-content__right a {
+    color: black;
+    font-size: 20px;
+    transition: 300ms;
+}
+
+.footer-content__right a:hover {
+    color: #FFA04C;
+}
+
+.footer-content__right-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content__right-social a {
+    font-size: 30px;
+}
+
+.footer-content__right-social a {
+    padding-bottom: 50px;
+}
+
+.burger{
+    display: none;
+}
+
+.footer-content img{
+  width: 100%;
+}
