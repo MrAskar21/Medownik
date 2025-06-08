@@ -996,8 +996,12 @@
 }
 
 @media (max-width: 580px) {
+    .container{
+        padding: 0;
+    }
     .header-content{
         flex-direction: column;
+        margin-top: 90px;
     }
     .header-left__content{
         display: flex;
@@ -1016,6 +1020,20 @@
     }
     .advantage h2{
         margin-top: 50px;
+    }
+    .new-items{
+        margin-top: 50px;
+    }
+    .contact-number{
+        max-width: 2020px;
+        gap: 40px;
+    }
+    .contact-name{
+        gap: 92px;
+        max-width: 200px;
+    }
+    .reviews-content{
+        margin-bottom: 50px;
     }
 }
 
